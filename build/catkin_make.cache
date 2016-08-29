@@ -1,0 +1,2 @@
+moving_det
+-DCATKIN_DEVEL_PREFIX=/home/mech-user/motion_det/devel -DCMAKE_INSTALL_PREFIX=/home/mech-user/motion_det/install -G Unix Makefiles

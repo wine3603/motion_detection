@@ -1,0 +1,8 @@
+prefix=/home/mech-user/motion_det/install
+
+Name: moving_det
+Description: Description of moving_det
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mech-user/motion_det/install/lib 
+Requires: 
