@@ -19,6 +19,8 @@
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/mech-user/motion_det/build/gtest/CMakeFiles/gtest.dir
 /home/mech-user/motion_det/build/gtest/CMakeFiles/gtest_main.dir
+/home/mech-user/motion_det/build/moving_det/CMakeFiles/icp.dir
+/home/mech-user/motion_det/build/moving_det/CMakeFiles/incremental_icp.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/moving_obj.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/nodelet_generate_messages_cpp.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/nodelet_generate_messages_lisp.dir
@@ -50,3 +52,4 @@
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/topic_tools_generate_messages_cpp.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/topic_tools_generate_messages_lisp.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/topic_tools_generate_messages_py.dir
+/home/mech-user/motion_det/build/moving_det/CMakeFiles/urg_cloud_pub.dir

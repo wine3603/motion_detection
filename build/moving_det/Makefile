@@ -374,6 +374,34 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+moving_det/CMakeFiles/icp.dir/rule:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/icp.dir/rule
+.PHONY : moving_det/CMakeFiles/icp.dir/rule
+
+# Convenience name for target.
+icp: moving_det/CMakeFiles/icp.dir/rule
+.PHONY : icp
+
+# fast build rule for target.
+icp/fast:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/icp.dir/build.make moving_det/CMakeFiles/icp.dir/build
+.PHONY : icp/fast
+
+# Convenience name for target.
+moving_det/CMakeFiles/incremental_icp.dir/rule:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/incremental_icp.dir/rule
+.PHONY : moving_det/CMakeFiles/incremental_icp.dir/rule
+
+# Convenience name for target.
+incremental_icp: moving_det/CMakeFiles/incremental_icp.dir/rule
+.PHONY : incremental_icp
+
+# fast build rule for target.
+incremental_icp/fast:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/incremental_icp.dir/build.make moving_det/CMakeFiles/incremental_icp.dir/build
+.PHONY : incremental_icp/fast
+
+# Convenience name for target.
 moving_det/CMakeFiles/moving_obj.dir/rule:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/moving_obj.dir/rule
 .PHONY : moving_det/CMakeFiles/moving_obj.dir/rule
@@ -779,6 +807,68 @@ topic_tools_generate_messages_py/fast:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/topic_tools_generate_messages_py.dir/build.make moving_det/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
 
+# Convenience name for target.
+moving_det/CMakeFiles/urg_cloud_pub.dir/rule:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/urg_cloud_pub.dir/rule
+.PHONY : moving_det/CMakeFiles/urg_cloud_pub.dir/rule
+
+# Convenience name for target.
+urg_cloud_pub: moving_det/CMakeFiles/urg_cloud_pub.dir/rule
+.PHONY : urg_cloud_pub
+
+# fast build rule for target.
+urg_cloud_pub/fast:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/build
+.PHONY : urg_cloud_pub/fast
+
+src/icp.o: src/icp.cpp.o
+.PHONY : src/icp.o
+
+# target to build an object file
+src/icp.cpp.o:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/icp.dir/build.make moving_det/CMakeFiles/icp.dir/src/icp.cpp.o
+.PHONY : src/icp.cpp.o
+
+src/icp.i: src/icp.cpp.i
+.PHONY : src/icp.i
+
+# target to preprocess a source file
+src/icp.cpp.i:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/icp.dir/build.make moving_det/CMakeFiles/icp.dir/src/icp.cpp.i
+.PHONY : src/icp.cpp.i
+
+src/icp.s: src/icp.cpp.s
+.PHONY : src/icp.s
+
+# target to generate assembly for a file
+src/icp.cpp.s:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/icp.dir/build.make moving_det/CMakeFiles/icp.dir/src/icp.cpp.s
+.PHONY : src/icp.cpp.s
+
+src/incremental_icp.o: src/incremental_icp.cpp.o
+.PHONY : src/incremental_icp.o
+
+# target to build an object file
+src/incremental_icp.cpp.o:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/incremental_icp.dir/build.make moving_det/CMakeFiles/incremental_icp.dir/src/incremental_icp.cpp.o
+.PHONY : src/incremental_icp.cpp.o
+
+src/incremental_icp.i: src/incremental_icp.cpp.i
+.PHONY : src/incremental_icp.i
+
+# target to preprocess a source file
+src/incremental_icp.cpp.i:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/incremental_icp.dir/build.make moving_det/CMakeFiles/incremental_icp.dir/src/incremental_icp.cpp.i
+.PHONY : src/incremental_icp.cpp.i
+
+src/incremental_icp.s: src/incremental_icp.cpp.s
+.PHONY : src/incremental_icp.s
+
+# target to generate assembly for a file
+src/incremental_icp.cpp.s:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/incremental_icp.dir/build.make moving_det/CMakeFiles/incremental_icp.dir/src/incremental_icp.cpp.s
+.PHONY : src/incremental_icp.cpp.s
+
 src/moving_obj.o: src/moving_obj.cpp.o
 .PHONY : src/moving_obj.o
 
@@ -803,6 +893,30 @@ src/moving_obj.cpp.s:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/moving_obj.dir/build.make moving_det/CMakeFiles/moving_obj.dir/src/moving_obj.cpp.s
 .PHONY : src/moving_obj.cpp.s
 
+src/urg_cloud_pub.o: src/urg_cloud_pub.cpp.o
+.PHONY : src/urg_cloud_pub.o
+
+# target to build an object file
+src/urg_cloud_pub.cpp.o:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/src/urg_cloud_pub.cpp.o
+.PHONY : src/urg_cloud_pub.cpp.o
+
+src/urg_cloud_pub.i: src/urg_cloud_pub.cpp.i
+.PHONY : src/urg_cloud_pub.i
+
+# target to preprocess a source file
+src/urg_cloud_pub.cpp.i:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/src/urg_cloud_pub.cpp.i
+.PHONY : src/urg_cloud_pub.cpp.i
+
+src/urg_cloud_pub.s: src/urg_cloud_pub.cpp.s
+.PHONY : src/urg_cloud_pub.s
+
+# target to generate assembly for a file
+src/urg_cloud_pub.cpp.s:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/src/urg_cloud_pub.cpp.s
+.PHONY : src/urg_cloud_pub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -826,6 +940,8 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... icp"
+	@echo "... incremental_icp"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -861,9 +977,19 @@ help:
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_py"
+	@echo "... urg_cloud_pub"
+	@echo "... src/icp.o"
+	@echo "... src/icp.i"
+	@echo "... src/icp.s"
+	@echo "... src/incremental_icp.o"
+	@echo "... src/incremental_icp.i"
+	@echo "... src/incremental_icp.s"
 	@echo "... src/moving_obj.o"
 	@echo "... src/moving_obj.i"
 	@echo "... src/moving_obj.s"
+	@echo "... src/urg_cloud_pub.o"
+	@echo "... src/urg_cloud_pub.i"
+	@echo "... src/urg_cloud_pub.s"
 .PHONY : help
 
 

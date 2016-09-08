@@ -449,6 +449,32 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named icp
+
+# Build rule for target.
+icp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 icp
+.PHONY : icp
+
+# fast build rule for target.
+icp/fast:
+	$(MAKE) -f moving_det/CMakeFiles/icp.dir/build.make moving_det/CMakeFiles/icp.dir/build
+.PHONY : icp/fast
+
+#=============================================================================
+# Target rules for targets named incremental_icp
+
+# Build rule for target.
+incremental_icp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 incremental_icp
+.PHONY : incremental_icp
+
+# fast build rule for target.
+incremental_icp/fast:
+	$(MAKE) -f moving_det/CMakeFiles/incremental_icp.dir/build.make moving_det/CMakeFiles/incremental_icp.dir/build
+.PHONY : incremental_icp/fast
+
+#=============================================================================
 # Target rules for targets named moving_obj
 
 # Build rule for target.
@@ -825,6 +851,19 @@ topic_tools_generate_messages_py/fast:
 	$(MAKE) -f moving_det/CMakeFiles/topic_tools_generate_messages_py.dir/build.make moving_det/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named urg_cloud_pub
+
+# Build rule for target.
+urg_cloud_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 urg_cloud_pub
+.PHONY : urg_cloud_pub
+
+# fast build rule for target.
+urg_cloud_pub/fast:
+	$(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/build
+.PHONY : urg_cloud_pub/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -861,6 +900,8 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... icp"
+	@echo "... incremental_icp"
 	@echo "... moving_obj"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
@@ -890,6 +931,7 @@ help:
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_py"
+	@echo "... urg_cloud_pub"
 .PHONY : help
 
 

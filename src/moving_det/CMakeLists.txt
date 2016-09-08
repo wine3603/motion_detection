@@ -15,10 +15,6 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 
-################################################
-## Declare ROS dynamic reconfigure parameters ##
-################################################
-
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES moving_det
@@ -30,32 +26,26 @@ catkin_package(
 ## Build ##
 ###########
 
-include_directories(include)
+include_directories(include ${catkin_INCLUDE_DIRS})
+find_package(PCL 1.7 REQUIRED)
+find_package(OpenCV REQUIRED)
 
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
-
-## Declare a C++ library
-# add_library(moving_det
-#   src/moving_det.cpp
-#)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories( ${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
 
 ## Add cmake target dependencies of the library
-## as an example, code may need to be generated before libraries
-## either from message generation or dynamic reconfigure
 # add_dependencies(moving_det ${${PROJECT_NAME}_EXPORTED_TARGETS} )
 
 ## Declare a C++ executable
  add_executable(moving_obj src/moving_obj.cpp)
+ target_link_libraries(moving_obj  ${catkin_LIBRARIES})
 
-## Add cmake target dependencies of the executable
-## same as for the library above
-# add_dependencies(moving_det_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_executable(icp src/icp.cpp)
+target_link_libraries(icp ${catkin_LIBRARIES})
 
-## Specify libraries to link a library or executable target against
- target_link_libraries(moving_obj
-   ${catkin_LIBRARIES}
- )
+add_executable(incremental_icp src/incremental_icp.cpp)
+target_link_libraries(incremental_icp  ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
-
+add_executable(urg_cloud_pub src/urg_cloud_pub.cpp)
+target_link_libraries(urg_cloud_pub ${catkin_LIBRARIES} ${PCL_LIBRARIES})
