@@ -292,6 +292,7 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 moving_det/all: moving_det/CMakeFiles/icp.dir/all
 moving_det/all: moving_det/CMakeFiles/incremental_icp.dir/all
 moving_det/all: moving_det/CMakeFiles/moving_obj.dir/all
+moving_det/all: moving_det/CMakeFiles/normal_NDT.dir/all
 moving_det/all: moving_det/CMakeFiles/urg_cloud_pub.dir/all
 .PHONY : moving_det/all
 
@@ -318,6 +319,7 @@ moving_det/clean: moving_det/CMakeFiles/moving_obj.dir/clean
 moving_det/clean: moving_det/CMakeFiles/nodelet_generate_messages_cpp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/nodelet_generate_messages_py.dir/clean
+moving_det/clean: moving_det/CMakeFiles/normal_NDT.dir/clean
 moving_det/clean: moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
@@ -1042,6 +1044,41 @@ moving_det/CMakeFiles/nodelet_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: moving_det/CMakeFiles/nodelet_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target moving_det/CMakeFiles/normal_NDT.dir
+
+# All Build rule for target.
+moving_det/CMakeFiles/normal_NDT.dir/all:
+	$(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/depend
+	$(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  6
+	@echo "Built target normal_NDT"
+.PHONY : moving_det/CMakeFiles/normal_NDT.dir/all
+
+# Include target in all.
+all: moving_det/CMakeFiles/normal_NDT.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+moving_det/CMakeFiles/normal_NDT.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mech-user/motion_det/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/normal_NDT.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mech-user/motion_det/build/CMakeFiles 0
+.PHONY : moving_det/CMakeFiles/normal_NDT.dir/rule
+
+# Convenience name for target.
+normal_NDT: moving_det/CMakeFiles/normal_NDT.dir/rule
+.PHONY : normal_NDT
+
+# clean rule for target.
+moving_det/CMakeFiles/normal_NDT.dir/clean:
+	$(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/clean
+.PHONY : moving_det/CMakeFiles/normal_NDT.dir/clean
+
+# clean rule for target.
+clean: moving_det/CMakeFiles/normal_NDT.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1826,7 +1863,7 @@ clean: moving_det/CMakeFiles/topic_tools_generate_messages_py.dir/clean
 moving_det/CMakeFiles/urg_cloud_pub.dir/all:
 	$(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/depend
 	$(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  7
 	@echo "Built target urg_cloud_pub"
 .PHONY : moving_det/CMakeFiles/urg_cloud_pub.dir/all
 

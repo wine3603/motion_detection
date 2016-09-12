@@ -527,6 +527,19 @@ nodelet_generate_messages_py/fast:
 .PHONY : nodelet_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named normal_NDT
+
+# Build rule for target.
+normal_NDT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 normal_NDT
+.PHONY : normal_NDT
+
+# fast build rule for target.
+normal_NDT/fast:
+	$(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/build
+.PHONY : normal_NDT/fast
+
+#=============================================================================
 # Target rules for targets named pcl_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -906,6 +919,7 @@ help:
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
+	@echo "... normal_NDT"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... pcl_msgs_generate_messages_py"

@@ -458,6 +458,20 @@ nodelet_generate_messages_py/fast:
 .PHONY : nodelet_generate_messages_py/fast
 
 # Convenience name for target.
+moving_det/CMakeFiles/normal_NDT.dir/rule:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/normal_NDT.dir/rule
+.PHONY : moving_det/CMakeFiles/normal_NDT.dir/rule
+
+# Convenience name for target.
+normal_NDT: moving_det/CMakeFiles/normal_NDT.dir/rule
+.PHONY : normal_NDT
+
+# fast build rule for target.
+normal_NDT/fast:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/build
+.PHONY : normal_NDT/fast
+
+# Convenience name for target.
 moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 .PHONY : moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
@@ -893,6 +907,30 @@ src/moving_obj.cpp.s:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/moving_obj.dir/build.make moving_det/CMakeFiles/moving_obj.dir/src/moving_obj.cpp.s
 .PHONY : src/moving_obj.cpp.s
 
+src/normal_NDT.o: src/normal_NDT.cpp.o
+.PHONY : src/normal_NDT.o
+
+# target to build an object file
+src/normal_NDT.cpp.o:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/src/normal_NDT.cpp.o
+.PHONY : src/normal_NDT.cpp.o
+
+src/normal_NDT.i: src/normal_NDT.cpp.i
+.PHONY : src/normal_NDT.i
+
+# target to preprocess a source file
+src/normal_NDT.cpp.i:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/src/normal_NDT.cpp.i
+.PHONY : src/normal_NDT.cpp.i
+
+src/normal_NDT.s: src/normal_NDT.cpp.s
+.PHONY : src/normal_NDT.s
+
+# target to generate assembly for a file
+src/normal_NDT.cpp.s:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/src/normal_NDT.cpp.s
+.PHONY : src/normal_NDT.cpp.s
+
 src/urg_cloud_pub.o: src/urg_cloud_pub.cpp.o
 .PHONY : src/urg_cloud_pub.o
 
@@ -950,6 +988,7 @@ help:
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
+	@echo "... normal_NDT"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... pcl_msgs_generate_messages_py"
@@ -987,6 +1026,9 @@ help:
 	@echo "... src/moving_obj.o"
 	@echo "... src/moving_obj.i"
 	@echo "... src/moving_obj.s"
+	@echo "... src/normal_NDT.o"
+	@echo "... src/normal_NDT.i"
+	@echo "... src/normal_NDT.s"
 	@echo "... src/urg_cloud_pub.o"
 	@echo "... src/urg_cloud_pub.i"
 	@echo "... src/urg_cloud_pub.s"
