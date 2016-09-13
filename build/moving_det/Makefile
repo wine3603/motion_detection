@@ -654,6 +654,20 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+moving_det/CMakeFiles/shot.dir/rule:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/shot.dir/rule
+.PHONY : moving_det/CMakeFiles/shot.dir/rule
+
+# Convenience name for target.
+shot: moving_det/CMakeFiles/shot.dir/rule
+.PHONY : shot
+
+# fast build rule for target.
+shot/fast:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/shot.dir/build.make moving_det/CMakeFiles/shot.dir/build
+.PHONY : shot/fast
+
+# Convenience name for target.
 moving_det/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : moving_det/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -931,6 +945,30 @@ src/normal_NDT.cpp.s:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/src/normal_NDT.cpp.s
 .PHONY : src/normal_NDT.cpp.s
 
+src/shot.o: src/shot.cpp.o
+.PHONY : src/shot.o
+
+# target to build an object file
+src/shot.cpp.o:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/shot.dir/build.make moving_det/CMakeFiles/shot.dir/src/shot.cpp.o
+.PHONY : src/shot.cpp.o
+
+src/shot.i: src/shot.cpp.i
+.PHONY : src/shot.i
+
+# target to preprocess a source file
+src/shot.cpp.i:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/shot.dir/build.make moving_det/CMakeFiles/shot.dir/src/shot.cpp.i
+.PHONY : src/shot.cpp.i
+
+src/shot.s: src/shot.cpp.s
+.PHONY : src/shot.s
+
+# target to generate assembly for a file
+src/shot.cpp.s:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/shot.dir/build.make moving_det/CMakeFiles/shot.dir/src/shot.cpp.s
+.PHONY : src/shot.cpp.s
+
 src/urg_cloud_pub.o: src/urg_cloud_pub.cpp.o
 .PHONY : src/urg_cloud_pub.o
 
@@ -1003,6 +1041,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... shot"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
@@ -1029,6 +1068,9 @@ help:
 	@echo "... src/normal_NDT.o"
 	@echo "... src/normal_NDT.i"
 	@echo "... src/normal_NDT.s"
+	@echo "... src/shot.o"
+	@echo "... src/shot.i"
+	@echo "... src/shot.s"
 	@echo "... src/urg_cloud_pub.o"
 	@echo "... src/urg_cloud_pub.i"
 	@echo "... src/urg_cloud_pub.s"

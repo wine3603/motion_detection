@@ -52,3 +52,6 @@ target_link_libraries(urg_cloud_pub ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
 add_executable(normal_NDT src/normal_NDT.cpp)
 target_link_libraries(normal_NDT ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+
+add_executable(shot  src/shot.cpp)
+target_link_libraries(shot ${catkin_LIBRARIES} ${PCL_LIBRARIES})

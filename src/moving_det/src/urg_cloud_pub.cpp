@@ -32,7 +32,7 @@ static tf::TransformListener *slistener;
 static pcl::PointCloud<pcl::PointXYZI> sPCLCloud;
 static pcl::PointCloud<pcl::PointXYZRGB> sPCLCloudRGB;
 static ros::Publisher s_cloud_pub;
-static ros::Publisher wide_pub;
+//static ros::Publisher wide_pub;
 static std::string s_frame_id;
 static cv_bridge::CvImagePtr s_cv_ptr;	
 //static sensor_msgs::CameraInfo s_camera_info;
@@ -127,8 +127,8 @@ void laser_cb(const sensor_msgs::LaserScan::ConstPtr& scan)
 //	tempCloud.points.clear();
 	for( int i = 0 ; i < scanline.points.size(); i++){
 		sPCLCloud.points.push_back(scanline.points[i]);
-	if(i = 500)
-		Edge_Point.points.push_back(scanline.points[i]);
+//	if(i = 500)
+//		Edge_Point.points.push_back(scanline.points[i]);
 		}
 	sPCLCloud.height++;
 
@@ -151,13 +151,13 @@ void command_cb(const std_msgs::String::ConstPtr &msg)
 		} else {
 			pcl::toROSMsg(sPCLCloud, cloud_msg);
 		}
-	sensor_msgs::PointCloud2 wide_msg;
-	pcl::toROSMsg(Edge_Point, wide_msg);
+//	sensor_msgs::PointCloud2 wide_msg;
+//	pcl::toROSMsg(Edge_Point, wide_msg);
         cloud_msg.header.frame_id= "dynamixel_base";
 	cloud_msg.header.stamp  = ros::Time::now();
         s_cloud_pub.publish(cloud_msg);
-	wide_msg.header.frame_id = "dynamixel_base";
-	wide_pub.publish(wide_msg);
+//	wide_msg.header.frame_id = "dynamixel_base";
+//	wide_pub.publish(wide_msg);
     }
     if (str_list[0] == "save" && str_list.size() > 1) {
 		if (color_mode) {
@@ -191,7 +191,7 @@ int main(int argc, char** argv){
     sPCLCloud.width = 1081;//init by zhang  2016.1.11
 
     s_cloud_pub = node.advertise<sensor_msgs::PointCloud2>("time_cloud", 100);
-    wide_pub = node.advertise<sensor_msgs::PointCloud2>("wide_cloud", 100);
+//    wide_pub = node.advertise<sensor_msgs::PointCloud2>("wide_cloud", 100);
     ros::Subscriber sub = node.subscribe<sensor_msgs::LaserScan>("/most_intense", 100, laser_cb);
     ros::Subscriber sub2 = node.subscribe<std_msgs::String>("/urg_assembler_command", 100, command_cb);
     ros::Subscriber sub3 = node.subscribe<dynamixel_msgs::JointState>("/hokuyo_tilt_controller/state", 100, dynamixel_cb);

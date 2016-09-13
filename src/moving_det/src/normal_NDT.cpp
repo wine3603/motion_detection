@@ -44,7 +44,7 @@ main (int argc, char** argv)
   // Filtering input scan to roughly 10% of original size to increase speed of registration.
   pcl::PointCloud<pcl::PointXYZ>::Ptr filtered_cloud (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::ApproximateVoxelGrid<pcl::PointXYZ> approximate_voxel_filter;
-  approximate_voxel_filter.setLeafSize (0.2, 0.2, 0.2);
+  approximate_voxel_filter.setLeafSize (0.1, 0.1, 0.1);
   approximate_voxel_filter.setInputCloud (input_cloud);
   approximate_voxel_filter.filter (*filtered_cloud);
   std::cout << "Filtered cloud contains " << filtered_cloud->size ()
@@ -59,7 +59,7 @@ main (int argc, char** argv)
   // Setting maximum step size for More-Thuente line search.
   ndt.setStepSize (0.1);
   //Setting Resolution of NDT grid structure (VoxelGridCovariance).
-  ndt.setResolution (1.0);
+  ndt.setResolution (0.1);
 
   // Setting max number of registration iterations.
   if (pcl::console::find_switch (argc, argv, "-i")){

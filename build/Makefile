@@ -709,6 +709,19 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named shot
+
+# Build rule for target.
+shot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shot
+.PHONY : shot
+
+# fast build rule for target.
+shot/fast:
+	$(MAKE) -f moving_det/CMakeFiles/shot.dir/build.make moving_det/CMakeFiles/shot.dir/build
+.PHONY : shot/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -933,6 +946,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... shot"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
