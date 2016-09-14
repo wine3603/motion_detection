@@ -243,17 +243,27 @@ moving_det/CMakeFiles/shot.dir/src/shot.cpp.o
  /usr/include/pcl-1.7/pcl/features/impl/integral_image2D.hpp
  /usr/include/pcl-1.7/pcl/features/impl/integral_image_normal.hpp
  /usr/include/pcl-1.7/pcl/features/impl/normal_3d.hpp
+ /usr/include/pcl-1.7/pcl/features/impl/normal_3d_omp.hpp
  /usr/include/pcl-1.7/pcl/features/impl/shot.hpp
  /usr/include/pcl-1.7/pcl/features/impl/shot_lrf.hpp
+ /usr/include/pcl-1.7/pcl/features/impl/shot_lrf_omp.hpp
+ /usr/include/pcl-1.7/pcl/features/impl/shot_omp.hpp
  /usr/include/pcl-1.7/pcl/features/integral_image2D.h
  /usr/include/pcl-1.7/pcl/features/integral_image_normal.h
  /usr/include/pcl-1.7/pcl/features/normal_3d.h
+ /usr/include/pcl-1.7/pcl/features/normal_3d_omp.h
  /usr/include/pcl-1.7/pcl/features/shot.h
  /usr/include/pcl-1.7/pcl/features/shot_lrf.h
+ /usr/include/pcl-1.7/pcl/features/shot_lrf_omp.h
+ /usr/include/pcl-1.7/pcl/features/shot_omp.h
  /usr/include/pcl-1.7/pcl/filters/boost.h
  /usr/include/pcl-1.7/pcl/filters/filter.h
+ /usr/include/pcl-1.7/pcl/filters/filter_indices.h
  /usr/include/pcl-1.7/pcl/filters/impl/filter.hpp
+ /usr/include/pcl-1.7/pcl/filters/impl/filter_indices.hpp
+ /usr/include/pcl-1.7/pcl/filters/impl/statistical_outlier_removal.hpp
  /usr/include/pcl-1.7/pcl/filters/impl/voxel_grid.hpp
+ /usr/include/pcl-1.7/pcl/filters/statistical_outlier_removal.h
  /usr/include/pcl-1.7/pcl/filters/voxel_grid.h
  /usr/include/pcl-1.7/pcl/for_each_type.h
  /usr/include/pcl-1.7/pcl/geometry/planar_polygon.h
@@ -297,7 +307,6 @@ moving_det/CMakeFiles/shot.dir/src/shot.cpp.o
  /usr/include/pcl-1.7/pcl/search/search.h
  /usr/include/pcl-1.7/pcl/visualization/area_picking_event.h
  /usr/include/pcl-1.7/pcl/visualization/boost.h
- /usr/include/pcl-1.7/pcl/visualization/cloud_viewer.h
  /usr/include/pcl-1.7/pcl/visualization/common/actor_map.h
  /usr/include/pcl-1.7/pcl/visualization/common/common.h
  /usr/include/pcl-1.7/pcl/visualization/common/impl/common.hpp

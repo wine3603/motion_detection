@@ -11,13 +11,23 @@ pcl/io/pcd_io.h
 -
 pcl/features/normal_3d.h
 -
-pcl/features/shot.h
--
 pcl/features/integral_image_normal.h
 -
-pcl/visualization/cloud_viewer.h
+pcl/visualization/pcl_visualizer.h
 -
 pcl/filters/voxel_grid.h
+-
+pcl/filters/statistical_outlier_removal.h
+-
+pcl/features/normal_3d_omp.h
+-
+pcl/features/shot_omp.h
+-
+pcl/kdtree/kdtree_flann.h
+-
+pcl/kdtree/impl/kdtree_flann.hpp
+-
+pcl/correspondence.h
 -
 
 /usr/include/eigen3/Eigen/Cholesky
@@ -1378,6 +1388,10 @@ pcl/features/integral_image_normal.h
 pcl/features/normal_3d.h
 -
 
+/usr/include/pcl-1.7/pcl/features/impl/normal_3d_omp.hpp
+pcl/features/normal_3d_omp.h
+-
+
 /usr/include/pcl-1.7/pcl/features/impl/shot.hpp
 pcl/features/shot.h
 -
@@ -1390,6 +1404,22 @@ utility
 utility
 -
 pcl/features/shot_lrf.h
+-
+
+/usr/include/pcl-1.7/pcl/features/impl/shot_lrf_omp.hpp
+utility
+-
+pcl/features/shot_lrf_omp.h
+-
+pcl/features/shot_lrf.h
+-
+
+/usr/include/pcl-1.7/pcl/features/impl/shot_omp.hpp
+pcl/features/shot_omp.h
+-
+pcl/common/time.h
+-
+pcl/features/shot_lrf_omp.h
 -
 
 /usr/include/pcl-1.7/pcl/features/integral_image2D.h
@@ -1418,6 +1448,12 @@ pcl/common/centroid.h
 pcl/features/impl/normal_3d.hpp
 -
 
+/usr/include/pcl-1.7/pcl/features/normal_3d_omp.h
+pcl/features/normal_3d.h
+-
+pcl/features/impl/normal_3d_omp.hpp
+-
+
 /usr/include/pcl-1.7/pcl/features/shot.h
 pcl/point_types.h
 -
@@ -1432,6 +1468,26 @@ pcl/point_types.h
 pcl/features/feature.h
 -
 pcl/features/impl/shot_lrf.hpp
+-
+
+/usr/include/pcl-1.7/pcl/features/shot_lrf_omp.h
+pcl/point_types.h
+-
+pcl/features/feature.h
+-
+pcl/features/shot_lrf.h
+-
+pcl/features/impl/shot_lrf_omp.hpp
+-
+
+/usr/include/pcl-1.7/pcl/features/shot_omp.h
+pcl/point_types.h
+-
+pcl/features/feature.h
+-
+pcl/features/shot.h
+-
+pcl/features/impl/shot_omp.hpp
 -
 
 /usr/include/pcl-1.7/pcl/filters/boost.h
@@ -1472,10 +1528,28 @@ pcl/PointIndices.h
 pcl/filters/impl/filter.hpp
 -
 
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h
+pcl/filters/filter.h
+-
+pcl/filters/impl/filter_indices.hpp
+-
+
 /usr/include/pcl-1.7/pcl/filters/impl/filter.hpp
 pcl/pcl_macros.h
 -
 pcl/filters/filter.h
+-
+
+/usr/include/pcl-1.7/pcl/filters/impl/filter_indices.hpp
+pcl/pcl_macros.h
+-
+pcl/filters/filter_indices.h
+-
+
+/usr/include/pcl-1.7/pcl/filters/impl/statistical_outlier_removal.hpp
+pcl/filters/statistical_outlier_removal.h
+-
+pcl/common/io.h
 -
 
 /usr/include/pcl-1.7/pcl/filters/impl/voxel_grid.hpp
@@ -1484,6 +1558,14 @@ pcl/common/common.h
 pcl/common/io.h
 -
 pcl/filters/voxel_grid.h
+-
+
+/usr/include/pcl-1.7/pcl/filters/statistical_outlier_removal.h
+pcl/filters/filter_indices.h
+-
+pcl/search/pcl_search.h
+-
+pcl/filters/impl/statistical_outlier_removal.hpp
 -
 
 /usr/include/pcl-1.7/pcl/filters/voxel_grid.h
@@ -2042,12 +2124,6 @@ boost/foreach.hpp
 boost/date_time/posix_time/posix_time.hpp
 -
 boost/filesystem.hpp
--
-
-/usr/include/pcl-1.7/pcl/visualization/cloud_viewer.h
-pcl/visualization/pcl_visualizer.h
--
-string
 -
 
 /usr/include/pcl-1.7/pcl/visualization/common/actor_map.h
