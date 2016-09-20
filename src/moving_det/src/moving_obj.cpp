@@ -1,7 +1,7 @@
 /*******************************************************************
   copyright (c) 2016 07 06 the Univ of Tokyo
  *
- * @file save_pcd.cpp
+ * @file_pcd.cpp
  * @brief  code for rsj 2016, body detection and motion recovery
  * @author Tianwei Zhang
  *******************************************************************/

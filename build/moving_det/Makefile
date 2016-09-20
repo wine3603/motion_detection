@@ -472,6 +472,20 @@ normal_NDT/fast:
 .PHONY : normal_NDT/fast
 
 # Convenience name for target.
+moving_det/CMakeFiles/pcd_combine.dir/rule:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/pcd_combine.dir/rule
+.PHONY : moving_det/CMakeFiles/pcd_combine.dir/rule
+
+# Convenience name for target.
+pcd_combine: moving_det/CMakeFiles/pcd_combine.dir/rule
+.PHONY : pcd_combine
+
+# fast build rule for target.
+pcd_combine/fast:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/build
+.PHONY : pcd_combine/fast
+
+# Convenience name for target.
 moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 .PHONY : moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
@@ -945,6 +959,30 @@ src/normal_NDT.cpp.s:
 	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/normal_NDT.dir/build.make moving_det/CMakeFiles/normal_NDT.dir/src/normal_NDT.cpp.s
 .PHONY : src/normal_NDT.cpp.s
 
+src/pcd_combine.o: src/pcd_combine.cpp.o
+.PHONY : src/pcd_combine.o
+
+# target to build an object file
+src/pcd_combine.cpp.o:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/src/pcd_combine.cpp.o
+.PHONY : src/pcd_combine.cpp.o
+
+src/pcd_combine.i: src/pcd_combine.cpp.i
+.PHONY : src/pcd_combine.i
+
+# target to preprocess a source file
+src/pcd_combine.cpp.i:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/src/pcd_combine.cpp.i
+.PHONY : src/pcd_combine.cpp.i
+
+src/pcd_combine.s: src/pcd_combine.cpp.s
+.PHONY : src/pcd_combine.s
+
+# target to generate assembly for a file
+src/pcd_combine.cpp.s:
+	cd /home/mech-user/motion_det/build && $(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/src/pcd_combine.cpp.s
+.PHONY : src/pcd_combine.cpp.s
+
 src/shot.o: src/shot.cpp.o
 .PHONY : src/shot.o
 
@@ -1027,6 +1065,7 @@ help:
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... normal_NDT"
+	@echo "... pcd_combine"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... pcl_msgs_generate_messages_py"
@@ -1068,6 +1107,9 @@ help:
 	@echo "... src/normal_NDT.o"
 	@echo "... src/normal_NDT.i"
 	@echo "... src/normal_NDT.s"
+	@echo "... src/pcd_combine.o"
+	@echo "... src/pcd_combine.i"
+	@echo "... src/pcd_combine.s"
 	@echo "... src/shot.o"
 	@echo "... src/shot.i"
 	@echo "... src/shot.s"

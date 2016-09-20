@@ -38,8 +38,8 @@ add_definitions(${PCL_DEFINITIONS})
 # add_dependencies(moving_det ${${PROJECT_NAME}_EXPORTED_TARGETS} )
 
 ## Declare a C++ executable
- add_executable(moving_obj src/moving_obj.cpp)
- target_link_libraries(moving_obj  ${catkin_LIBRARIES})
+add_executable(moving_obj src/moving_obj.cpp)
+target_link_libraries(moving_obj  ${catkin_LIBRARIES})
 
 add_executable(icp src/icp.cpp)
 target_link_libraries(icp ${catkin_LIBRARIES})
@@ -54,4 +54,7 @@ add_executable(normal_NDT src/normal_NDT.cpp)
 target_link_libraries(normal_NDT ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
 add_executable(shot  src/shot.cpp)
-target_link_libraries(shot ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(shot       ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+
+add_executable(pcd_combine  src/pcd_combine.cpp)
+target_link_libraries(pcd_combine  ${catkin_LIBRARIES} ${PCL_LIBRARIES})

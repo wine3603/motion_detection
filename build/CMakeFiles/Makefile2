@@ -293,6 +293,7 @@ moving_det/all: moving_det/CMakeFiles/icp.dir/all
 moving_det/all: moving_det/CMakeFiles/incremental_icp.dir/all
 moving_det/all: moving_det/CMakeFiles/moving_obj.dir/all
 moving_det/all: moving_det/CMakeFiles/normal_NDT.dir/all
+moving_det/all: moving_det/CMakeFiles/pcd_combine.dir/all
 moving_det/all: moving_det/CMakeFiles/shot.dir/all
 moving_det/all: moving_det/CMakeFiles/urg_cloud_pub.dir/all
 .PHONY : moving_det/all
@@ -321,6 +322,7 @@ moving_det/clean: moving_det/CMakeFiles/nodelet_generate_messages_cpp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/nodelet_generate_messages_py.dir/clean
 moving_det/clean: moving_det/CMakeFiles/normal_NDT.dir/clean
+moving_det/clean: moving_det/CMakeFiles/pcd_combine.dir/clean
 moving_det/clean: moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 moving_det/clean: moving_det/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
@@ -1084,6 +1086,41 @@ clean: moving_det/CMakeFiles/normal_NDT.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target moving_det/CMakeFiles/pcd_combine.dir
+
+# All Build rule for target.
+moving_det/CMakeFiles/pcd_combine.dir/all:
+	$(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/depend
+	$(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  7
+	@echo "Built target pcd_combine"
+.PHONY : moving_det/CMakeFiles/pcd_combine.dir/all
+
+# Include target in all.
+all: moving_det/CMakeFiles/pcd_combine.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+moving_det/CMakeFiles/pcd_combine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mech-user/motion_det/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 moving_det/CMakeFiles/pcd_combine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mech-user/motion_det/build/CMakeFiles 0
+.PHONY : moving_det/CMakeFiles/pcd_combine.dir/rule
+
+# Convenience name for target.
+pcd_combine: moving_det/CMakeFiles/pcd_combine.dir/rule
+.PHONY : pcd_combine
+
+# clean rule for target.
+moving_det/CMakeFiles/pcd_combine.dir/clean:
+	$(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/clean
+.PHONY : moving_det/CMakeFiles/pcd_combine.dir/clean
+
+# clean rule for target.
+clean: moving_det/CMakeFiles/pcd_combine.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -1493,7 +1530,7 @@ clean: moving_det/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 moving_det/CMakeFiles/shot.dir/all:
 	$(MAKE) -f moving_det/CMakeFiles/shot.dir/build.make moving_det/CMakeFiles/shot.dir/depend
 	$(MAKE) -f moving_det/CMakeFiles/shot.dir/build.make moving_det/CMakeFiles/shot.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  8
 	@echo "Built target shot"
 .PHONY : moving_det/CMakeFiles/shot.dir/all
 
@@ -1900,7 +1937,7 @@ clean: moving_det/CMakeFiles/topic_tools_generate_messages_py.dir/clean
 moving_det/CMakeFiles/urg_cloud_pub.dir/all:
 	$(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/depend
 	$(MAKE) -f moving_det/CMakeFiles/urg_cloud_pub.dir/build.make moving_det/CMakeFiles/urg_cloud_pub.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mech-user/motion_det/build/CMakeFiles  9
 	@echo "Built target urg_cloud_pub"
 .PHONY : moving_det/CMakeFiles/urg_cloud_pub.dir/all
 

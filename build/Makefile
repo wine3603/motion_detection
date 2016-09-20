@@ -540,6 +540,19 @@ normal_NDT/fast:
 .PHONY : normal_NDT/fast
 
 #=============================================================================
+# Target rules for targets named pcd_combine
+
+# Build rule for target.
+pcd_combine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcd_combine
+.PHONY : pcd_combine
+
+# fast build rule for target.
+pcd_combine/fast:
+	$(MAKE) -f moving_det/CMakeFiles/pcd_combine.dir/build.make moving_det/CMakeFiles/pcd_combine.dir/build
+.PHONY : pcd_combine/fast
+
+#=============================================================================
 # Target rules for targets named pcl_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -933,6 +946,7 @@ help:
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... normal_NDT"
+	@echo "... pcd_combine"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... pcl_msgs_generate_messages_py"

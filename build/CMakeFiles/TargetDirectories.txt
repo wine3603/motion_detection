@@ -26,6 +26,7 @@
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/nodelet_generate_messages_lisp.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/nodelet_generate_messages_py.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/normal_NDT.dir
+/home/mech-user/motion_det/build/moving_det/CMakeFiles/pcd_combine.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/pcl_msgs_generate_messages_cpp.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/pcl_msgs_generate_messages_lisp.dir
 /home/mech-user/motion_det/build/moving_det/CMakeFiles/pcl_msgs_generate_messages_py.dir
